@@ -159,10 +159,19 @@ const menuItems = [
   */
 ]
 
+interface ShopItem {
+  name: string
+  description: string
+  price: number
+  icon: React.ReactNode
+  benefits?: string[]
+  buyNowHref?: string
+}
+
 export default function MinecraftStore() {
   const [isOpen, setIsOpen] = useState(true)
   const [selectedItem, setSelectedItem] = useState(menuItems[0])
-  const [selectedShopItem, setSelectedShopItem] = useState<any | null>(null)
+  const [selectedShopItem, setSelectedShopItem] = useState<ShopItem | null>(null)
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
