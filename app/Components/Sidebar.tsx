@@ -265,6 +265,7 @@ export default function MinecraftStore() {
                 </div>
                 <div className="mb-6">
                   <h4 className={`text-2xl font-bold mb-2 ${vt323.className}`}>Benefits:</h4>
+                  {selectedShopItem.benefits && selectedShopItem.benefits.length > 0 && (
                   <ul className="space-y-2">
                     {selectedShopItem.benefits.map((benefit, index) => (
                       <li key={index} className="flex items-center">
@@ -273,6 +274,7 @@ export default function MinecraftStore() {
                       </li>
                     ))}
                   </ul>
+                )}
                 </div>
                 {selectedShopItem.buyNowHref && (
                   <Link href={selectedShopItem.buyNowHref} passHref>
