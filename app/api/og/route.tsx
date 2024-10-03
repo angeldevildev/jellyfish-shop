@@ -8,7 +8,7 @@ export async function GET(req: NextRequest) {
   const serverName = searchParams.get('serverName') || 'JellyFishMC'
 
   const fontData = await fetch(
-    new URL('/app/fonts/MineCraftBold.otf', import.meta.url)
+    new URL('../../fonts/MineCraftBold.otf', import.meta.url)
   ).then((res) => res.arrayBuffer())
 
   return new ImageResponse(
