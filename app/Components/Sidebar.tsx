@@ -18,7 +18,7 @@ const menuItems = [
     icon: "🏝️",
     label: "Survival",
     color: "bg-blue-500",
-    content: "Welcome to the Survival world! Gather resources, build structures, and survive against mobs.",
+    content: "Benvenuti nel mondo della survival! Raccogliete risorse, costruite strutture e sopravvivete contro i mobs.",
     shopItems: [
       {
         name: "Goat",
