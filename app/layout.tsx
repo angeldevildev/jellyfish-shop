@@ -20,6 +20,15 @@ export const metadata: Metadata = {
     title: "JellyFishMC Shop",
     description: "Questo è lo shop di JellyFishMC, quì puoi trovare tutti i ranks/vantaggi disponibili sul server per ciascuna modalità!",
     siteName: "JellyFishMC Shop",
+    url: "https://jellyfish-shop.vercel.app",
+    images: [
+      {
+        url: "https://jellyfish-shop.vercel.app/api/og",
+        width: "1200",
+        height: "630",
+        alt: "Lo shop di JellyFishMC ti aspetta!",
+      },
+    ],
   },
 };
 
